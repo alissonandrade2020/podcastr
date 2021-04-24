@@ -1,38 +1,51 @@
-import React from "react";
-import Head from "next/head";
-import Router from "next/router";
-import NProgress from "nprogress";
+import { Header } from '../components/Header'
+import { Player } from '../components/Player'
 
-import "@styles/global.scss";
-import styles from "@styles/app.module.scss";
+import '../styles/global.scss'
 
-import { Header } from "@components/Header";
-import { Player } from "@components/Player";
-import { PlayerContextProvider } from "@contexts/PlayerContext";
-
-Router.events.on("routeChangeStart", () => NProgress.start());
-Router.events.on("routeChangeComplete", () => NProgress.done());
-Router.events.on("routeChangeError", () => NProgress.done());
+import styles from '../styles/app.module.scss'
+import { PlayerContext } from '../contexts/PlayerContext'
+import { useState } from 'react'
 
 function MyApp({ Component, pageProps }) {
+  const [episodeList, setEpisodeList] = useState([])
+  const [currentEpisodeIndex, setCurrentEpisodeIndex] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(false)
+
+  function play(episode){
+    setEpisodeList([episode])
+    setCurrentEpisodeIndex(0)
+    setIsPlaying(true)
+  }
+
+  function togglePlay(){
+    setIsPlaying(!isPlaying)
+  }
+
+  function setPlayingState(state: boolean){
+    setIsPlaying(state)
+  }
+
   return (
-    <PlayerContextProvider>
-      <div className={styles.wrapper}>
-        <Head>
-          <title>Podcastr</title>
+    <PlayerContext.Provider value={{
+      episodeList,
+      currentEpisodeIndex,
+      isPlaying,
+      play,
+      togglePlay,
+      setPlayingState,      
+    }}>    
+    <div className={styles.wrapper}>
+      <main>
+        <Header />
+        <Component {...pageProps} />
+      </main>
+      <Player />
 
-          <link rel="stylesheet" type="text/css" href="/css/nprogress.css" />
-        </Head>
-
-        <main>
-          <Header />
-          <Component {...pageProps} />
-        </main>
-
-        <Player />
-      </div>
-    </PlayerContextProvider>
-  );
+    </div>
+    </PlayerContext.Provider>
+    
+  )
 }
 
-export default MyApp;
+export default MyApp
