@@ -2,11 +2,11 @@
 
 Player de podcast desenvolvido na semana NLW da Rocketseat.
 
-Para visualizar o projeto online [acesse este link](https://podcastr-ivory.vercel.app/)
+Para visualizar o projeto online [acesse este link](https://podcastralisson.vercel.app/)
 
 ## Instalações e usos
 
-Faça o download [desse repositório](https://github.com/iaematt/podcastr)
+Faça o download [desse repositório](https://github.com/alissonandrade2020/podcastr)
 
 ```
 Ou clone o repositório

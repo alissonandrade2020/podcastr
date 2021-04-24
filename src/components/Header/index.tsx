@@ -14,13 +14,18 @@ export function Header() {
     <header className={styles.container}>
       <Link href="/">
         <a title="Podcastr">
-          <img src="logo.svg" alt="Podcastr" />
+          <img src="/img/logo.svg" alt="Podcastr" />
         </a>
       </Link>
 
       <p>O melhor para você ouvir, sempre</p>
 
-      <span>{currentDate}</span>
+      <span>
+        {currentDate} |{" "}
+        <a href="https://github.com/iaematt/podcastr" target="_blank">
+          GitHub
+        </a>
+      </span>
     </header>
   );
 }

@@ -18,5 +18,15 @@
   span {
     margin-left: auto;
     text-transform: capitalize;
+
+    a {
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--gray-800);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
