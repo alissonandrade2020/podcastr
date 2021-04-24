@@ -13,8 +13,16 @@ export function Header() {
             <img src="/logo.svg" alt="Podcastr"/>
 
             <p>O melhor para você ouvir, sempre</p>
-            <a href="https://app.rocketseat.com.br/me/alissondeandradearaujo">   Rocketseat </a>
-            <a href="https://github.com/alissonandrade2020">   Github  </a>
+            <>
+            <br>
+             <br>
+            </>
+            <a href="https://app.rocketseat.com.br/me/alissondeandradearaujo">Rocketseat</a>
+             <>
+            <br>
+            <br>
+            </>
+            <a href="https://github.com/alissonandrade2020">Github</a>
 
             <span>{currentDate}</span>
         </header>
