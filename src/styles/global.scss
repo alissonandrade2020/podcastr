@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-
   box-sizing: border-box;
 }
 
 :root {
+  //variables
+
   --white: #FFF;
 
   --gray-50: #F7F8FA;
@@ -22,18 +23,20 @@
   --purple-800: #6F48C9;
 }
 
+// regra de acessibilidade para se adaptar de acordo com o tamanho da fonte do 
+// sistema
 @media (max-width: 1080px) {
   html {
-    font-size: 93.75%; // = 15px
-  }  
+    font-size: 93.75%;  // 15px
+  }
 }
 
 @media (max-width: 720px) {
   html {
-    font-size: 87.5%; // = 14px
-  }  
+    font-size: 87.5%; // 14px
+  }
 }
- 
+
 body {
   background: var(--gray-50);
 }
