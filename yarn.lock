@@ -470,9 +470,9 @@ camelcase@^6.2.0:
   integrity sha512-c7wVvbw3f37nuobQNtgsgG9POC9qMbNuMQmTCqZv23b6MIz0fcYpBiOlv9gEN/hdLdnZTDQhg6e9Dq5M1vKvfg==
 
 caniuse-lite@^1.0.30001173, caniuse-lite@^1.0.30001179:
-  version "1.0.30001211"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001211.tgz#be40d528bb10272eba0037a88adc40054810f8e2"
-  integrity sha512-v3GXWKofIkN3PkSidLI5d1oqeKNsam9nQkqieoMhP87nxOY0RPDC8X2+jcv8pjV4dRozPLSoMqNii9sDViOlIg==
+  version "1.0.30001214"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001214.tgz#70f153c78223515c6d37a9fde6cd69250da9d872"
+  integrity sha512-O2/SCpuaU3eASWVaesQirZv1MSjUNOvmugaD8zNSJqw6Vv5SGwoOpA9LJs3pNPfM745nxqPvfZY3MQKY4AKHYg==
 
 chalk@2.4.2, chalk@^2.0.0, chalk@^2.4.2:
   version "2.4.2"
@@ -2338,9 +2338,9 @@ rc-trigger@^5.0.0:
     rc-util "^5.5.0"
 
 rc-util@^5.0.0, rc-util@^5.2.1, rc-util@^5.3.0, rc-util@^5.5.0:
-  version "5.10.1"
-  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.10.1.tgz#4cdec6bfaa684bf859d2fc59dad142f8cd59c783"
-  integrity sha512-Mr3lpl6PYL/wr16t5p8BJVN/sb8+x9U2pf81ijoozzNOb5oTg/meeBnoPuiEaxHt1zTDRokZ5+V8xoErTjP2AA==
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/rc-util/-/rc-util-5.10.0.tgz#dd51bae65436c5c185dd24020497db8966438e1c"
+  integrity sha512-0A2tJiZ4KfmaH72Q2Q1ak8w9bFaZ1WKlHie9itBWagaFWXVmA4YT+s8ZrnIMdcNE5R+ezvsgalY1QPm6fEzaUA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     react-is "^16.12.0"
