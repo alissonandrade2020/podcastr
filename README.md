@@ -1,8 +1,23 @@
 # Podcastr 🎧
 
+> 🎧 Podcastr - O melhor para você ouvir, sempre
+
 Player de podcast desenvolvido na semana NLW da Rocketseat.
 
 Para visualizar o projeto online [acesse este link](https://podcastralisson.vercel.app/)
+
+<h2 id="tecnologias">🛸 Tecnologias</h2>
+  
+  <p>
+    As seguintes ferramentas foram usadas no desenvolvimento dessa aplicação:
+    <ul>
+      <li><a href="https://pt-br.reactjs.org/">React.js</a></li>
+      <li><a href="https://nextjs.org/">Next.js</a></li>
+      <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
+      <li><a href="https://sass-lang.com">Sass</a></li>
+    </ul>
+  </p>
+
 
 ## Instalações e usos
 
