@@ -1,7 +1,13 @@
-.wrapper {
-  display: flex;
+.appWrapper {
+    display: flex;
 
-  main {
-    flex: 1;
-  };
+    main {
+        flex: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .appWrapper {
+        flex-direction: column;
+    }
 }
